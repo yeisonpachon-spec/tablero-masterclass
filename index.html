@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Madurez en IA · Masterclass en vivo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="marco">
+  <header>
+    <div>
+      <div class="ante t">Autodiagnóstico de madurez en IA · En vivo</div>
+      <h1 class="t">¿Dónde está hoy la sala?</h1>
+    </div>
+    <div class="vivo"><span class="punto"></span><span id="hora">Conectando…</span></div>
+  </header>
+  <main>
+    <div class="col">
+      <div class="tarjeta grande"><div class="cifra t" id="total">0</div><div class="etq">Diagnósticos recibidos</div></div>
+      <div class="tarjeta grande"><div class="cifra t" id="prom">0<small>/100</small></div><div class="etq">Puntaje promedio de la sala</div></div>
+    </div>
+    <div class="col">
+      <div class="tarjeta flex" style="flex:1">
+        <div class="tit t">Distribución por nivel</div>
+        <div id="niveles"></div>
+      </div>
+      <div class="tarjeta">
+        <div class="tit t" style="margin-bottom:1.6vh">Promedio por dimensión</div>
+        <div class="dims" id="dims"></div>
+      </div>
+    </div>
+  </main>
+  <footer><span>Solo se muestran datos agregados: ningún nombre ni empresa.</span><span id="modo"></span></footer>
+</div>
+<script src="tablero.js"></script>
+</body>
+</html>
