@@ -36,3 +36,41 @@
   .dim .barra{background:var(--teal)}
   footer{display:flex;justify-content:space-between;font-size:1.4vh;color:var(--gris)}
   .vacio{color:var(--gris);font-size:2vh}
+
+  /* Celular y pantallas angostas (lo que ven los asistentes): una columna, tamaños fijos y desplazamiento. */
+  @media (max-width: 760px), (orientation: portrait) and (max-width: 900px) {
+    html,body{height:auto;overflow:auto}
+    body{background-size:32px 32px}
+    .marco{height:auto;min-height:100vh;min-height:100dvh;padding:18px 16px 20px;gap:16px;border-top-width:4px}
+    header{flex-direction:column-reverse;align-items:stretch;gap:14px}
+    .derecha{flex-direction:row;justify-content:space-between;align-items:center}
+    .logo{height:18px}
+    .vivo{gap:8px;font-size:12px}
+    .punto{width:9px;height:9px}
+    .ante{font-size:10px;letter-spacing:.18em}
+    h1{font-size:26px;margin-top:6px}
+    main{display:flex;flex-direction:column;gap:12px}
+    .col{gap:12px}
+    .col:first-child{flex-direction:row}
+    .tarjeta{padding:16px 14px}
+    .grande{flex:1;min-width:0}
+    .cifra{font-size:44px}
+    .cifra small{font-size:16px}
+    .etq{font-size:10px;letter-spacing:.1em;margin-top:6px;line-height:1.35}
+    .tit{font-size:11px;letter-spacing:.16em;margin-bottom:14px}
+    .tit[style]{margin-bottom:14px!important}
+    #niveles{gap:14px}
+    .nivel{grid-template-columns:1fr 64px;grid-template-areas:"nombre num" "pista pista";gap:6px 10px}
+    .nivel .nombre{grid-area:nombre}
+    .nivel .pista{grid-area:pista;height:14px}
+    .nivel .num{grid-area:num}
+    .nombre{font-size:17px}
+    .rango{font-size:11px;display:inline;margin:0 0 0 6px}
+    .num{font-size:22px}
+    .num small{font-size:11px}
+    .dims{grid-template-columns:1fr 1fr;gap:14px 16px}
+    .dim .fila{font-size:13px;margin-bottom:6px;gap:6px}
+    .dim .fila b{font-size:15px}
+    .dim .pista{height:7px}
+    footer{flex-direction:column;gap:4px;font-size:11px;line-height:1.4}
+  }
